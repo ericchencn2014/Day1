@@ -1,0 +1,4 @@
+strategy: define irrelevant class and the same method, at the enter, passing the obj, and the obj can choose the right method and class
+template: collect the stable thing to a superclass, all unstable thing carry out in the subclass
+
+if there cannot find bug in the programme itself, maybe there are error in logic
