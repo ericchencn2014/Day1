@@ -20,7 +20,6 @@ homer.guesser = PlayRandom.new(1, NUM_OF_RUNS)
 1.upto(NUM_OF_RUNS) do |i|
   oracle.secret_number = i
   homer.reset
-  homer.guesser.reset(1,NUM_OF_RUNS)
 
 
 =begin
@@ -52,12 +51,12 @@ total_num_attempts = 0
 total_num_failures = 0
 bart = Participant.new(oracle, max_num_attempts:NUM_OF_RUNS*2)
 
-homer.guesser = PlayLinear.new(1, 0)
+homer.guesser = PlayLinear.new(0, 1)
 1.upto(NUM_OF_RUNS) do |i|
   oracle.secret_number = i
   #bart.reset
   homer.reset
-  homer.guesser.reset(1,0)
+  homer.guesser.reset(0,1)
 =begin
 
   if bart.play_linear(1)==:success
