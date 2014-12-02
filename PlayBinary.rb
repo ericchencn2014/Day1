@@ -13,9 +13,6 @@ class PlayBinary < NumberGame
       @lower = @num+1
     end
     @num=(@lower+@upper)/2
-    p "upper #{@upper}"
-    p "lower #{@lower}"
-    p "num #{@num}"
   end
 
 =begin
